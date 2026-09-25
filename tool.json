@@ -1,0 +1,217 @@
+{
+  "tool": {
+    "id": "nexus-coluna-cervical",
+    "title": "Critérios NEXUS (coluna cervical)",
+    "short": "Dispensa de imagem cervical no trauma fechado",
+    "desc": "Critérios NEXUS de baixo risco: veja se a imagem da coluna cervical pode ser dispensada no trauma fechado, pelos cinco critérios clínicos.",
+    "lead": "Identifica, no trauma fechado, os pacientes com risco muito baixo de lesão da coluna cervical, em quem a radiografia ou a tomografia pode ser dispensada.",
+    "spec": [
+      "medicina-de-emergencia",
+      "ortopedia-e-traumatologia",
+      "neurocirurgia",
+      "cirurgia-geral"
+    ],
+    "fields": [
+      [
+        "dor",
+        "Dor à palpação na linha média posterior da coluna cervical",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "deficit",
+        "Déficit neurológico focal",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "alerta",
+        "Alteração do nível de consciência",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "intox",
+        "Evidência de intoxicação",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "distrativa",
+        "Lesão dolorosa que distrai (ex.: fratura de osso longo, queimadura extensa)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "Critérios NEXUS presentes",
+      "unit": "de 5 critérios",
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixo risco: imagem da coluna cervical dispensável",
+          "Todos os cinco critérios de baixo risco foram satisfeitos."
+        ],
+        [
+          1,
+          "high",
+          "Imagem da coluna cervical indicada",
+          "Mantenha a restrição de movimento da coluna até a avaliação por imagem."
+        ]
+      ]
+    },
+    "formula": "<p>A imagem é dispensável quando <strong>todos</strong> os critérios são satisfeitos: sem dor na linha média posterior, sem déficit neurológico focal, nível de consciência normal, sem intoxicação e sem lesão dolorosa que distraia. Qualquer um presente indica imagem.</p>",
+    "table": [
+      [
+        "Critérios presentes",
+        "Conduta",
+        "Desempenho (Hoffman, 2000)"
+      ],
+      [
+        "0",
+        "Imagem dispensável",
+        "Sensibilidade de 99,6% para lesão cervical"
+      ],
+      [
+        "1 ou mais",
+        "Imagem indicada",
+        "Especificidade de 12,9%"
+      ]
+    ],
+    "tips": [
+      "A alta sensibilidade depende de aplicar os critérios de forma estrita: na dúvida sobre intoxicação ou lesão distrativa, considere o critério presente.",
+      "Em idosos, a sensibilidade do NEXUS é menor; muitos serviços preferem TC com limiar mais baixo acima de 65 anos.",
+      "Em pacientes alertas e estáveis, a Canadian C-Spine Rule foi mais sensível e específica que o NEXUS no estudo comparativo de 2003.",
+      "Com imagem indicada no adulto, a TC é o exame de escolha na maioria dos serviços de trauma; a radiografia simples tem sensibilidade limitada."
+    ],
+    "sources": [
+      [
+        "Hoffman JR et al. Validity of a set of clinical criteria to rule out injury to the cervical spine in patients with blunt trauma. N Engl J Med, 2000.",
+        "https://doi.org/10.1056/NEJM200007133430203"
+      ],
+      [
+        "Stiell IG et al. The Canadian C-Spine Rule versus the NEXUS low-risk criteria in patients with trauma. N Engl J Med, 2003.",
+        "https://doi.org/10.1056/NEJMoa031375"
+      ]
+    ],
+    "cases": [
+      [
+        "Nenhum critério presente: imagem dispensável",
+        [],
+        {
+          "score": 0,
+          "level": "low"
+        }
+      ],
+      [
+        "Dor na linha média: imagem indicada (limite)",
+        {
+          "dor": true
+        },
+        {
+          "score": 1,
+          "level": "high"
+        }
+      ],
+      [
+        "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+        {
+          "dor": true,
+          "intox": true,
+          "distrativa": true
+        },
+        {
+          "score": 3,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 5 critérios",
+      "label": "Critérios NEXUS presentes",
+      "fields": [
+        [
+          "dor",
+          "chk",
+          1
+        ],
+        [
+          "deficit",
+          "chk",
+          1
+        ],
+        [
+          "alerta",
+          "chk",
+          1
+        ],
+        [
+          "intox",
+          "chk",
+          1
+        ],
+        [
+          "distrativa",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixo risco: imagem da coluna cervical dispensável",
+          "Todos os cinco critérios de baixo risco foram satisfeitos."
+        ],
+        [
+          1,
+          "high",
+          "Imagem da coluna cervical indicada",
+          "Mantenha a restrição de movimento da coluna até a avaliação por imagem."
+        ]
+      ]
+    },
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}

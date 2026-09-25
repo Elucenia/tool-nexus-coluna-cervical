@@ -1,0 +1,44 @@
+[
+  {
+    "label": "Nenhum critério presente: imagem dispensável",
+    "input": {},
+    "expected": {
+      "score": 0,
+      "level": "low"
+    },
+    "originalInput": [],
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Dor na linha média: imagem indicada (limite)",
+    "input": {
+      "dor": true
+    },
+    "expected": {
+      "score": 1,
+      "level": "high"
+    },
+    "originalInput": {
+      "dor": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+    "input": {
+      "dor": true,
+      "intox": true,
+      "distrativa": true
+    },
+    "expected": {
+      "score": 3,
+      "level": "high"
+    },
+    "originalInput": {
+      "dor": true,
+      "intox": true,
+      "distrativa": true
+    },
+    "expandedZeroOptions": []
+  }
+]
