@@ -1,11 +1,11 @@
-/* tool-nexus-coluna-cervical · Elucenia · https://github.com/Elucenia/tool-nexus-coluna-cervical
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-nexus-coluna-cervical · ELUCENIA · https://github.com/Elucenia/tool-nexus-coluna-cervical
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"nexus-coluna-cervical","title":"Critérios NEXUS (coluna cervical)","fields":[["dor","Dor à palpação na linha média posterior da coluna cervical","chk",{"pts":1}],["deficit","Déficit neurológico focal","chk",{"pts":1}],["alerta","Alteração do nível de consciência","chk",{"pts":1}],["intox","Evidência de intoxicação","chk",{"pts":1}],["distrativa","Lesão dolorosa que distrai (ex.: fratura de osso longo, queimadura extensa)","chk",{"pts":1}]],"config":{"unit":"de 5 critérios","label":"Critérios NEXUS presentes","fields":[["dor","chk",1],["deficit","chk",1],["alerta","chk",1],["intox","chk",1],["distrativa","chk",1]],"bands":[[0,"low","Baixo risco: imagem da coluna cervical dispensável","Todos os cinco critérios de baixo risco foram satisfeitos."],[1,"high","Imagem da coluna cervical indicada","Mantenha a restrição de movimento da coluna até a avaliação por imagem."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
