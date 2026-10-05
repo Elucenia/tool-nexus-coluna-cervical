@@ -1,44 +1,116 @@
 [
   {
-    "label": "Nenhum critério presente: imagem dispensável",
-    "input": {},
+    "id": "nexus-coluna-cervical",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Nenhum critério presente: imagem dispensável",
+    "originalInput": [],
+    "input": {
+      "dor": false,
+      "deficit": false,
+      "alerta": false,
+      "intox": false,
+      "distrativa": false
+    },
     "expected": {
       "score": 0,
       "level": "low"
     },
-    "originalInput": [],
-    "expandedZeroOptions": []
+    "recordedResult": {
+      "main": [
+        "0",
+        "de 5 critérios"
+      ],
+      "label": "Critérios NEXUS presentes",
+      "raw": {
+        "score": 0
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Dor na linha média: imagem indicada (limite)",
-    "input": {
+    "id": "nexus-coluna-cervical",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Dor na linha média: imagem indicada (limite)",
+    "originalInput": {
       "dor": true
+    },
+    "input": {
+      "dor": true,
+      "deficit": false,
+      "alerta": false,
+      "intox": false,
+      "distrativa": false
     },
     "expected": {
       "score": 1,
       "level": "high"
     },
-    "originalInput": {
-      "dor": true
+    "recordedResult": {
+      "main": [
+        "1",
+        "de 5 critérios"
+      ],
+      "label": "Critérios NEXUS presentes",
+      "raw": {
+        "score": 1
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
-    "input": {
+    "id": "nexus-coluna-cervical",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+    "originalInput": {
       "dor": true,
       "intox": true,
       "distrativa": true
+    },
+    "input": {
+      "dor": true,
+      "intox": true,
+      "distrativa": true,
+      "deficit": false,
+      "alerta": false
     },
     "expected": {
       "score": 3,
       "level": "high"
     },
-    "originalInput": {
-      "dor": true,
-      "intox": true,
-      "distrativa": true
+    "recordedResult": {
+      "main": [
+        "3",
+        "de 5 critérios"
+      ],
+      "label": "Critérios NEXUS presentes",
+      "raw": {
+        "score": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

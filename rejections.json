@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dor",
+    "input": {
+      "dor": "2",
+      "deficit": false,
+      "alerta": false,
+      "intox": false,
+      "distrativa": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean deficit",
+    "input": {
+      "dor": false,
+      "deficit": "2",
+      "alerta": false,
+      "intox": false,
+      "distrativa": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "deficit"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean alerta",
+    "input": {
+      "dor": false,
+      "deficit": false,
+      "alerta": "2",
+      "intox": false,
+      "distrativa": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "alerta"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean intox",
+    "input": {
+      "dor": false,
+      "deficit": false,
+      "alerta": false,
+      "intox": "2",
+      "distrativa": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "intox"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean distrativa",
+    "input": {
+      "dor": false,
+      "deficit": false,
+      "alerta": false,
+      "intox": false,
+      "distrativa": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "distrativa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

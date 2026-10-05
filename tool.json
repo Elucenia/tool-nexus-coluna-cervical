@@ -5,6 +5,7 @@
     "short": "Dispensa de imagem cervical no trauma fechado",
     "desc": "Critérios NEXUS de baixo risco: veja se a imagem da coluna cervical pode ser dispensada no trauma fechado, pelos cinco critérios clínicos.",
     "lead": "Identifica, no trauma fechado, os pacientes com risco muito baixo de lesão da coluna cervical, em quem a radiografia ou a tomografia pode ser dispensada.",
+    "kind": "Escore",
     "spec": [
       "medicina-de-emergencia",
       "ortopedia-e-traumatologia",
@@ -16,85 +17,34 @@
         "dor",
         "Dor à palpação na linha média posterior da coluna cervical",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "deficit",
         "Déficit neurológico focal",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "alerta",
         "Alteração do nível de consciência",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "intox",
         "Evidência de intoxicação",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "distrativa",
         "Lesão dolorosa que distrai (ex.: fratura de osso longo, queimadura extensa)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "Critérios NEXUS presentes",
-      "unit": "de 5 critérios",
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixo risco: imagem da coluna cervical dispensável",
-          "Todos os cinco critérios de baixo risco foram satisfeitos."
-        ],
-        [
-          1,
-          "high",
-          "Imagem da coluna cervical indicada",
-          "Mantenha a restrição de movimento da coluna até a avaliação por imagem."
-        ]
-      ]
-    },
     "formula": "<p>A imagem é dispensável quando <strong>todos</strong> os critérios são satisfeitos: sem dor na linha média posterior, sem déficit neurológico focal, nível de consciência normal, sem intoxicação e sem lesão dolorosa que distraia. Qualquer um presente indica imagem.</p>",
-    "table": [
-      [
-        "Critérios presentes",
-        "Conduta",
-        "Desempenho (Hoffman, 2000)"
-      ],
-      [
-        "0",
-        "Imagem dispensável",
-        "Sensibilidade de 99,6% para lesão cervical"
-      ],
-      [
-        "1 ou mais",
-        "Imagem indicada",
-        "Especificidade de 12,9%"
-      ]
-    ],
-    "tips": [
-      "A alta sensibilidade depende de aplicar os critérios de forma estrita: na dúvida sobre intoxicação ou lesão distrativa, considere o critério presente.",
-      "Em idosos, a sensibilidade do NEXUS é menor; muitos serviços preferem TC com limiar mais baixo acima de 65 anos.",
-      "Em pacientes alertas e estáveis, a Canadian C-Spine Rule foi mais sensível e específica que o NEXUS no estudo comparativo de 2003.",
-      "Com imagem indicada no adulto, a TC é o exame de escolha na maioria dos serviços de trauma; a radiografia simples tem sensibilidade limitada."
-    ],
     "sources": [
       [
         "Hoffman JR et al. Validity of a set of clinical criteria to rule out injury to the cervical spine in patients with blunt trauma. N Engl J Med, 2000.",
@@ -137,53 +87,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 5 critérios",
-      "label": "Critérios NEXUS presentes",
-      "fields": [
-        [
-          "dor",
-          "chk",
-          1
-        ],
-        [
-          "deficit",
-          "chk",
-          1
-        ],
-        [
-          "alerta",
-          "chk",
-          1
-        ],
-        [
-          "intox",
-          "chk",
-          1
-        ],
-        [
-          "distrativa",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixo risco: imagem da coluna cervical dispensável",
-          "Todos os cinco critérios de baixo risco foram satisfeitos."
-        ],
-        [
-          1,
-          "high",
-          "Imagem da coluna cervical indicada",
-          "Mantenha a restrição de movimento da coluna até a avaliação por imagem."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -192,17 +95,201 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T13:08:00.439Z",
+      "total": 32,
+      "passed": 32,
+      "evidencePath": "reports/review-20261003/eight-additive-source-oracles-final23.json",
+      "evidenceSha256": "52360ca4cccc7b095b0de3b199fffda2e646b7a4dc92f325aa71eec61c4c7dfe",
+      "peerEvidencePath": "reports/review-20261003/eight-additive-source-oracles-independent-review-final23.json",
+      "peerEvidenceSha256": "64ff546626e0559b4f05f5eceb47e9cae355bfe7bc67f82744dbc3db60644f14",
+      "scope": "Entered discrete-point sum/count only. Original/full method conformance, input clinical adjudication, diagnostic/management decisions, prognosis, professional translations, rights and release approval are outside this test. Source-access and variant limits are retained.",
+      "source": {
+        "keys": [
+          "dor",
+          "deficit",
+          "alerta",
+          "intox",
+          "distrativa"
+        ],
+        "kind": "boolean",
+        "domain": [
+          false,
+          true
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/10891516/",
+        "edition": "Hoffman2000, DOI10.1056/NEJM200007133430203",
+        "locator": "Original abstract Methods: five absent features for low probability",
+        "access": "Original abstract read in primary indexed response2026-10-04; subsequent direct retrieval returned footer only. Count entered adverse-feature booleans only. No clinical assessment, patient eligibility, imaging choice or management approval."
+      },
+      "implementations": [
+        {
+          "app": "website",
+          "id": "nexus-coluna-cervical",
+          "sha256": "d3b3b6a1339b7d129f97e495103a3d46e8d3c4287e52ad8c65f417f3faed7026"
+        },
+        {
+          "app": "dashboard",
+          "id": "nexus-coluna-cervical",
+          "sha256": "d3b3b6a1339b7d129f97e495103a3d46e8d3c4287e52ad8c65f417f3faed7026"
+        },
+        {
+          "app": "command-center",
+          "id": "nexus-coluna-cervical",
+          "sha256": "d3b3b6a1339b7d129f97e495103a3d46e8d3c4287e52ad8c65f417f3faed7026"
+        }
+      ],
+      "qualifications": [
+        "The checked count is this implementation’s representation of already classified Boolean flags. The original source describes a decision rule in a block, not an independently validated additive clinical score. Threshold preprocessing, eligibility and clinical decision making are outside this arithmetic scope."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "NEXUS/Hoffman 2000:5 critérios debaixo risco; regra cervical original",
+    "implementationVersion": "nexus-coluna-cervical@native-2026-10-03+d3b3b6a1339b",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/10891516/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "A imagem é dispensável quando todos os critérios são satisfeitos: sem dor na linha média posterior, sem déficit neurológico focal, nível de consciência normal, sem intoxicação e sem lesão dolorosa que distraia. Qualquer um presente indica imagem.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "dor",
+            "label": "Dor à palpação na linha média posterior da coluna cervical",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "deficit",
+            "label": "Déficit neurológico focal",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "alerta",
+            "label": "Alteração do nível de consciência",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "intox",
+            "label": "Evidência de intoxicação",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "distrativa",
+            "label": "Lesão dolorosa que distrai (ex.: fratura de osso longo, queimadura extensa)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "422a0aa6d94a2a9fd081dfdcc6234bbc3a2b4dcace432cc73e694e39fd44b385"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Hoffman JR et al. Validity of a set of clinical criteria to rule out injury to the cervical spine in patients with blunt trauma. N Engl J Med, 2000.",
+          "url": "https://doi.org/10.1056/NEJM200007133430203",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Validity of a set of clinical criteria to rule out injury to the cervical spine in patients with blunt trauma. National Emergency X-Radiography Utilization Study Group.",
+            "year": "2000",
+            "firstPublicationDate": "2000-07-01",
+            "doi": "10.1056/nejm200007133430203",
+            "pmid": "10891516",
+            "journal": "The New England journal of medicine",
+            "authors": "Hoffman JR, Mower WR, Wolfson AB, Todd KH, Zucker MI."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/10891516/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "3236f3488cddb9dcd5598ea02accd4c75c02064f696f0b5d32427f77dba49155",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Stiell IG et al. The Canadian C-Spine Rule versus the NEXUS low-risk criteria in patients with trauma. N Engl J Med, 2003.",
+          "url": "https://doi.org/10.1056/NEJMoa031375",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The Canadian C-spine rule versus the NEXUS low-risk criteria in patients with trauma.",
+            "year": "2003",
+            "firstPublicationDate": "2003-12-01",
+            "doi": "10.1056/nejmoa031375",
+            "pmid": "14695411",
+            "journal": "The New England journal of medicine",
+            "authors": "Stiell IG, Clement CM, McKnight RD, Brison R, Schull MJ, Rowe BH, Worthington JR, Eisenhauer MA, Cass D, Greenberg G, MacPhail I, Dreyer J, Lee JS, Bandiera G, Reardon M, Holroyd B, Lesiuk H, Wells GA."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/14695411/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "581d857fa9d1139c48b5b8eb281d0990d8d70a2697fcf12671f0a2c0a81d2945",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T13:08:00.439Z",
+        "total": 32,
+        "passed": 32,
+        "evidencePath": "reports/review-20261003/eight-additive-source-oracles-final23.json",
+        "scope": "Entered discrete-point sum/count only. Original/full method conformance, input clinical adjudication, diagnostic/management decisions, prognosis, professional translations, rights and release approval are outside this test. Source-access and variant limits are retained.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "de3c066dd6b1e5be0c04035b7f771ac6bd488ea0be42491f9e0e5149b8c0d7cf"
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "d3b3b6a1339b7d129f97e495103a3d46e8d3c4287e52ad8c65f417f3faed7026"
+    },
+    "limits": "A regra NEXUS 2000 foi estudada em pacientes submetidos a radiografia cervical após trauma fechado. A classificação de baixa probabilidade exige os cinco critérios simultaneamente; o estudo relatou lesões não identificadas pela regra, portanto resultado negativo não é certeza de ausência de lesão. Idade, exclusões e aplicação em subgrupos precisam de conferência no protocolo integral.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.785Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "O resumo não informa faixa etária/exclusões pediátricas, sequência atual de imagem ou validação em subgrupos."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/nexus-coluna-cervical/calculator.js",
+    "bytes": 4877,
+    "sha256": "d3b3b6a1339b7d129f97e495103a3d46e8d3c4287e52ad8c65f417f3faed7026"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "0c4d2e280e0ebe54ef4d2d201d4ebc53c042010cd8210fc0f8e687eab98180c8",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 32,
+      "sha256": "b3cbfc0dd34b81dbc2c02e655c5fe0acda0e67fadf480cd015d8b853b16ccebc",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
