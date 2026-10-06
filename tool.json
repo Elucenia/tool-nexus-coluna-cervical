@@ -149,7 +149,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "NEXUS/Hoffman 2000:5 critérios debaixo risco; regra cervical original",
-    "implementationVersion": "nexus-coluna-cervical@native-2026-10-03+d3b3b6a1339b",
+    "implementationVersion": "nexus-coluna-cervical@native-2026-10-05+c6e1b32a6923",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/10891516/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -259,7 +259,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "d3b3b6a1339b7d129f97e495103a3d46e8d3c4287e52ad8c65f417f3faed7026"
+      "implementationHash": "c6e1b32a69231454e11819ac27e9fa3f60a69a40b41bed46b7785ea4c06c1992",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "nexus-coluna-cervical@native-2026-10-03+d3b3b6a1339b",
+          "previousImplementationHash": "d3b3b6a1339b7d129f97e495103a3d46e8d3c4287e52ad8c65f417f3faed7026",
+          "implementationHash": "c6e1b32a69231454e11819ac27e9fa3f60a69a40b41bed46b7785ea4c06c1992",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "422a0aa6d94a2a9fd081dfdcc6234bbc3a2b4dcace432cc73e694e39fd44b385",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A regra NEXUS 2000 foi estudada em pacientes submetidos a radiografia cervical após trauma fechado. A classificação de baixa probabilidade exige os cinco critérios simultaneamente; o estudo relatou lesões não identificadas pela regra, portanto resultado negativo não é certeza de ausência de lesão. Idade, exclusões e aplicação em subgrupos precisam de conferência no protocolo integral.",
     "sourceLimitEvidence": {
@@ -278,15 +306,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/nexus-coluna-cervical/calculator.js",
-    "bytes": 4877,
-    "sha256": "d3b3b6a1339b7d129f97e495103a3d46e8d3c4287e52ad8c65f417f3faed7026"
+    "bytes": 5082,
+    "sha256": "c6e1b32a69231454e11819ac27e9fa3f60a69a40b41bed46b7785ea4c06c1992"
   },
-  "sourceToolSha256": "0c4d2e280e0ebe54ef4d2d201d4ebc53c042010cd8210fc0f8e687eab98180c8",
+  "sourceToolSha256": "5e7e35fd19fa4afd31264a8c4322f383030a21d4f04ef5ea1613f1be74aa8cd5",
   "omittedFullReferenceBanks": [
     {
       "rows": 32,
       "sha256": "b3cbfc0dd34b81dbc2c02e655c5fe0acda0e67fadf480cd015d8b853b16ccebc",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

@@ -1,0 +1,175 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "nexus-coluna-cervical",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "c1e26d2118d9ff524915aae09e0f9794c041647b",
+    "oldEngineSha256": "d3b3b6a1339b7d129f97e495103a3d46e8d3c4287e52ad8c65f417f3faed7026",
+    "currentEngineSha256": "c6e1b32a69231454e11819ac27e9fa3f60a69a40b41bed46b7785ea4c06c1992"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Nenhum critério presente: imagem dispensável",
+      "input": {
+        "dor": false,
+        "deficit": false,
+        "alerta": false,
+        "intox": false,
+        "distrativa": false
+      },
+      "publicOutput": {
+        "id": "nexus-coluna-cervical",
+        "main": [
+          "0",
+          "de 5 critérios"
+        ],
+        "label": "Critérios NEXUS presentes",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "de 5 critérios"
+        ],
+        "label": "Critérios NEXUS presentes",
+        "level": "low",
+        "verdict": "Baixo risco: imagem da coluna cervical dispensável",
+        "note": "Todos os cinco critérios de baixo risco foram satisfeitos.",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Dor na linha média: imagem indicada (limite)",
+      "input": {
+        "dor": true,
+        "deficit": false,
+        "alerta": false,
+        "intox": false,
+        "distrativa": false
+      },
+      "publicOutput": {
+        "id": "nexus-coluna-cervical",
+        "main": [
+          "1",
+          "de 5 critérios"
+        ],
+        "label": "Critérios NEXUS presentes",
+        "raw": {
+          "score": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 1,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1",
+          "de 5 critérios"
+        ],
+        "label": "Critérios NEXUS presentes",
+        "level": "high",
+        "verdict": "Imagem da coluna cervical indicada",
+        "note": "Mantenha a restrição de movimento da coluna até a avaliação por imagem.",
+        "raw": {
+          "score": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+      "input": {
+        "dor": true,
+        "intox": true,
+        "distrativa": true,
+        "deficit": false,
+        "alerta": false
+      },
+      "publicOutput": {
+        "id": "nexus-coluna-cervical",
+        "main": [
+          "3",
+          "de 5 critérios"
+        ],
+        "label": "Critérios NEXUS presentes",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "de 5 critérios"
+        ],
+        "label": "Critérios NEXUS presentes",
+        "level": "high",
+        "verdict": "Imagem da coluna cervical indicada",
+        "note": "Mantenha a restrição de movimento da coluna até a avaliação por imagem.",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

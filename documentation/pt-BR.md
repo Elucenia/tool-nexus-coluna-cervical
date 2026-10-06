@@ -73,3 +73,28 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Baixo risco: imagem da coluna cervical dispensável
+
+Todos os cinco critérios de baixo risco foram satisfeitos.
+
+
+### 2
+
+Imagem da coluna cervical indicada
+
+Mantenha a restrição de movimento da coluna até a avaliação por imagem.
+
+
+### 3
+
+Imagem da coluna cervical indicada
+
+Mantenha a restrição de movimento da coluna até a avaliação por imagem.
+

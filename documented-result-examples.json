@@ -1,0 +1,537 @@
+{
+  "id": "nexus-coluna-cervical",
+  "implementationVersion": "nexus-coluna-cervical@native-2026-10-05+c6e1b32a6923",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Nenhum critério presente: imagem dispensável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Baixo risco: imagem da coluna cervical dispensável",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Todos os cinco critérios de baixo risco foram satisfeitos.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor na linha média: imagem indicada (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Imagem da coluna cervical indicada",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Mantenha a restrição de movimento da coluna até a avaliação por imagem.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Imagem da coluna cervical indicada",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Mantenha a restrição de movimento da coluna até a avaliação por imagem.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Nenhum critério presente: imagem dispensável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low risk: cervical spine imaging not required",
+            "locale": "en",
+            "template": "documented-authored-9458326bd7610af80c6b"
+          },
+          "note": {
+            "text": "All five low-risk criteria were met.",
+            "locale": "en",
+            "template": "documented-authored-534e2a7dcea6c9b9441f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor na linha média: imagem indicada (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cervical spine imaging indicated",
+            "locale": "en",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "Maintain spinal immobilization until imaging evaluation.",
+            "locale": "en",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Cervical spine imaging indicated",
+            "locale": "en",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "Maintain spinal immobilization until imaging evaluation.",
+            "locale": "en",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Nenhum critério presente: imagem dispensável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Bajo riesgo: no se requiere imagen de la columna cervical",
+            "locale": "es",
+            "template": "documented-authored-9458326bd7610af80c6b"
+          },
+          "note": {
+            "text": "Se cumplieron los cinco criterios de bajo riesgo.",
+            "locale": "es",
+            "template": "documented-authored-534e2a7dcea6c9b9441f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor na linha média: imagem indicada (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Se indica imagen de la columna cervical",
+            "locale": "es",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "Mantener la inmovilización de la columna hasta la evaluación por imagen.",
+            "locale": "es",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Se indica imagen de la columna cervical",
+            "locale": "es",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "Mantener la inmovilización de la columna hasta la evaluación por imagen.",
+            "locale": "es",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Nenhum critério presente: imagem dispensável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Faible risque : imagerie du rachis cervical non nécessaire",
+            "locale": "fr",
+            "template": "documented-authored-9458326bd7610af80c6b"
+          },
+          "note": {
+            "text": "Les cinq critères de faible risque ont tous été remplis.",
+            "locale": "fr",
+            "template": "documented-authored-534e2a7dcea6c9b9441f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor na linha média: imagem indicada (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Imagerie du rachis cervical indiquée",
+            "locale": "fr",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "Maintenir l’immobilisation du rachis jusqu’à l’évaluation par imagerie.",
+            "locale": "fr",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Imagerie du rachis cervical indiquée",
+            "locale": "fr",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "Maintenir l’immobilisation du rachis jusqu’à l’évaluation par imagerie.",
+            "locale": "fr",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Nenhum critério presente: imagem dispensável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Niedriges Risiko: Bildgebung der Halswirbelsäule nicht erforderlich",
+            "locale": "de",
+            "template": "documented-authored-9458326bd7610af80c6b"
+          },
+          "note": {
+            "text": "Alle fünf Niedrigrisikokriterien wurden erfüllt.",
+            "locale": "de",
+            "template": "documented-authored-534e2a7dcea6c9b9441f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor na linha média: imagem indicada (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Bildgebung der Halswirbelsäule indiziert",
+            "locale": "de",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "Die Wirbelsäulenimmobilisation bis zur Bildgebungsdiagnostik aufrechterhalten.",
+            "locale": "de",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Bildgebung der Halswirbelsäule indiziert",
+            "locale": "de",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "Die Wirbelsäulenimmobilisation bis zur Bildgebungsdiagnostik aufrechterhalten.",
+            "locale": "de",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Nenhum critério presente: imagem dispensável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Basso rischio: imaging del rachide cervicale non necessaria",
+            "locale": "it",
+            "template": "documented-authored-9458326bd7610af80c6b"
+          },
+          "note": {
+            "text": "Tutti e cinque i criteri di basso rischio sono stati soddisfatti.",
+            "locale": "it",
+            "template": "documented-authored-534e2a7dcea6c9b9441f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor na linha média: imagem indicada (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Indicata imaging del rachide cervicale",
+            "locale": "it",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "Mantenere l’immobilizzazione della colonna fino alla valutazione per immagini.",
+            "locale": "it",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Indicata imaging del rachide cervicale",
+            "locale": "it",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "Mantenere l’immobilizzazione della colonna fino alla valutazione per immagini.",
+            "locale": "it",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Nenhum critério presente: imagem dispensável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطورة منخفضة: تصوير العمود الفقري العنقي غير مطلوب",
+            "locale": "ar",
+            "template": "documented-authored-9458326bd7610af80c6b"
+          },
+          "note": {
+            "text": "تم استيفاء معايير الخطورة المنخفضة الخمسة جميعها.",
+            "locale": "ar",
+            "template": "documented-authored-534e2a7dcea6c9b9441f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor na linha média: imagem indicada (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "تصوير العمود الفقري العنقي مُشار إليه",
+            "locale": "ar",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "الحفاظ على تثبيت العمود الفقري حتى التقييم بالتصوير.",
+            "locale": "ar",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "تصوير العمود الفقري العنقي مُشار إليه",
+            "locale": "ar",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "الحفاظ على تثبيت العمود الفقري حتى التقييم بالتصوير.",
+            "locale": "ar",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Nenhum critério presente: imagem dispensável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低风险：无需进行颈椎影像学检查",
+            "locale": "zh",
+            "template": "documented-authored-9458326bd7610af80c6b"
+          },
+          "note": {
+            "text": "五项低风险标准均已满足。",
+            "locale": "zh",
+            "template": "documented-authored-534e2a7dcea6c9b9441f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor na linha média: imagem indicada (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "需进行颈椎影像学检查",
+            "locale": "zh",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "在影像学评估前保持脊柱制动。",
+            "locale": "zh",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "需进行颈椎影像学检查",
+            "locale": "zh",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "在影像学评估前保持脊柱制动。",
+            "locale": "zh",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Nenhum critério presente: imagem dispensável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低リスク：頸椎画像検査は不要",
+            "locale": "ja",
+            "template": "documented-authored-9458326bd7610af80c6b"
+          },
+          "note": {
+            "text": "5つの低リスク基準はすべて満たされました。",
+            "locale": "ja",
+            "template": "documented-authored-534e2a7dcea6c9b9441f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor na linha média: imagem indicada (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "頸椎画像検査が適応",
+            "locale": "ja",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "画像評価まで脊椎の固定を維持する。",
+            "locale": "ja",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "頸椎画像検査が適応",
+            "locale": "ja",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "画像評価まで脊椎の固定を維持する。",
+            "locale": "ja",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Nenhum critério presente: imagem dispensável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "कम जोखिम: ग्रीवा रीढ़ की इमेजिंग आवश्यक नहीं",
+            "locale": "hi",
+            "template": "documented-authored-9458326bd7610af80c6b"
+          },
+          "note": {
+            "text": "कम जोखिम के सभी पाँच मानदंड पूरे किए गए।",
+            "locale": "hi",
+            "template": "documented-authored-534e2a7dcea6c9b9441f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dor na linha média: imagem indicada (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ग्रीवा रीढ़ की इमेजिंग संकेतित है।",
+            "locale": "hi",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "इमेजिंग मूल्यांकन तक रीढ़ की स्थिरीकरण बनाए रखें।",
+            "locale": "hi",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Intoxicado com fratura de fêmur e dor cervical: 3 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ग्रीवा रीढ़ की इमेजिंग संकेतित है।",
+            "locale": "hi",
+            "template": "documented-authored-c0984c2b9cdb7f96838e"
+          },
+          "note": {
+            "text": "इमेजिंग मूल्यांकन तक रीढ़ की स्थिरीकरण बनाए रखें।",
+            "locale": "hi",
+            "template": "documented-authored-85b60c4b619402d496af"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}
